@@ -35,3 +35,6 @@ ADD extra/update-ca-certificates.runit /etc/service/update-ca-certificates/run
 
 VOLUME ["/root/.config/oxidized"]
 EXPOSE 8888/tcp
+
+# create router db
+RUN vim /etc/oxidived/router.db
